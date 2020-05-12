@@ -20,6 +20,6 @@
     "node-gyp-install": "*",
     "paper-jsdom": "*",
     "socket.io": "*",
-    "ueberDB": "*"
+    "ueberDB2": "*"
   }
 }
