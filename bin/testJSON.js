@@ -2,8 +2,8 @@
 
 var paper = require('paper');
 paper.setup(new paper.Canvas(1920, 1080));
-var ueberDB = require("ueberDB");
-var db = new ueberDB.database("dirty", {"filename" : "var/dirty.db"});
+var ueberdb2 = require("ueberdb2");
+var db = new ueberdb2.database("dirty", {"filename" : "var/dirty.db"});
 
 var projects = {};
 

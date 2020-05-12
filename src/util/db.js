@@ -1,9 +1,9 @@
 var settings = require('./Settings.js'),
     projects = require('./projects.js'),
-     ueberDB = require('ueberDB')
+    ueberdb2 = require('ueberdb2')
 
 // Database connection
-var db = new ueberDB.database(settings.dbType, settings.dbSettings);
+var db = new ueberdb2.database(settings.dbType, settings.dbSettings);
 
 // Init..
 db.init(function(err){
