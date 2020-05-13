@@ -12,10 +12,11 @@ var settings = require('./src/util/Settings.js'),
     socket = require('socket.io'),
     async = require('async'),
     fs = require('fs'),
-    cookieParser = require('cookie-parser');
+    cookieParser = require('cookie-parser'),
     http = require('http'),
-    https = require('https');
-    session = require('express-session');
+    https = require('https'),
+    session = require('express-session'),
+    errorHandler = require('errorhandler');
 
 /** 
  * SSL Logic and Server bindings
@@ -51,11 +52,11 @@ app.use(cookieParser());
 app.use(session({secret: 'secret', key: 'express.sid'}));
 
 // Development mode setting
-app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
+app.use(errorHandler({ dumpExceptions: true, showStack: true }));
 
 // Production mode setting
 app.configure('production', function(){
-  app.use(express.errorHandler());
+  app.use(errorHandler());
 });
 
 
