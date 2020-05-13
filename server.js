@@ -12,8 +12,10 @@ var settings = require('./src/util/Settings.js'),
     socket = require('socket.io'),
     async = require('async'),
     fs = require('fs'),
+    cookieParser = require('cookie-parser');
     http = require('http'),
     https = require('https');
+    session = require('express-session');
 
 /** 
  * SSL Logic and Server bindings
@@ -45,8 +47,8 @@ var clientSettings = {
 app.use(express.static(__dirname + '/'));
 
 // Sessions
-app.use(express.cookieParser());
-app.use(express.session({secret: 'secret', key: 'express.sid'}));
+app.use(cookieParser());
+app.use(session({secret: 'secret', key: 'express.sid'}));
 
 // Development mode setting
 app.configure('development', function(){
