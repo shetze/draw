@@ -21,7 +21,7 @@
     "socket.io": "*",
     "ueberdb2": "*",
     "paper": "*",
-    "extend": "*"
+    "extend": "*",
     "errorhandler": "*"
   }
 }
