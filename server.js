@@ -55,9 +55,7 @@ app.use(session({secret: 'secret', key: 'express.sid'}));
 app.use(errorHandler({ dumpExceptions: true, showStack: true }));
 
 // Production mode setting
-app.configure('production', function(){
-  app.use(errorHandler());
-});
+app.use(errorHandler());
 
 
 
