@@ -42,7 +42,7 @@ var clientSettings = {
 }
 
 // Config Express to server static files from /
-app.use(express.static(__dirname + '/');
+app.use(express.static(__dirname + '/'));
 
 // Sessions
 app.use(express.cookieParser());
