@@ -22,5 +22,6 @@
     "ueberdb2": "*",
     "paper": "*",
     "extend": "*"
+    "errorhandler": "*"
   }
 }
