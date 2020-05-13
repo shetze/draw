@@ -10,13 +10,17 @@
     "node": ">=10.0.x"
   },
   "dependencies": {
-    "express": "*",
-    "socket.io": "*",
     "async": "*",
-    "ueberdb2": "*",
     "canvas": "*",
+    "cookie-parser": "*",
+    "express": "*",
+    "express-session": "*",
+    "jsonminify": "*",
+    "node-gyp-install": "*",
+    "paper-jsdom": "*",
+    "socket.io": "*",
+    "ueberdb2": "*"
     "paper": "*",
-    "jsonminify":"*",
     "extend": "*"
   }
 }
