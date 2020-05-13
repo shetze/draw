@@ -51,9 +51,7 @@ app.use(cookieParser());
 app.use(session({secret: 'secret', key: 'express.sid'}));
 
 // Development mode setting
-app.configure('development', function(){
-  app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
-});
+app.use(express.errorHandler({ dumpExceptions: true, showStack: true }));
 
 // Production mode setting
 app.configure('production', function(){
